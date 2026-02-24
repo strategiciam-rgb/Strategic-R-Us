@@ -37,6 +37,7 @@ class StrategicBackendStack(Stack):
 
         # 1. Database for 'Link Credits' (High Speed, NoSQL)
         table = dynamodb.Table(self, "LinkCredits",
+
             partition_key=dynamodb.Attribute(name="user_id", type=dynamodb.AttributeType.STRING))
 
         # 2. AI Scout Lambda (Agentic Logic)
@@ -14309,4 +14310,4 @@ Are you sure you wish to execute the "create_branch" tool?
 
 2/2
  strategiciam-rgb accepted the action
-planning respon
+planning respo
